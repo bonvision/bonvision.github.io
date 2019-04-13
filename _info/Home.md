@@ -16,11 +16,11 @@ BonVision is an open-source closed-loop visual environment generator developed b
 * Can be used for Augmented Reality, Virtual Reality of 2D visual stimuli
 
 ***
-[Installation](/BonVision/pages/Install)
+[Installation](/pages/Install)
 
-[Getting Started](/BonVision/pages/info)
+[Getting Started](/pages/info)
 
-[Documentation for BonVision nodes](/BonVision/docs/docs)
+[Documentation for BonVision nodes](/docs/docs)
 
 ***
-### [Job Opening!](/Bonvision/info/community/)
+### [Job Opening!](/info/community/)
