@@ -21,5 +21,6 @@ BonVision is an open-source closed-loop visual environment generator developed b
 [Getting Started](/BonVision/pages/info)
 
 [Documentation for BonVision nodes](/BonVision/docs/docs)
+
 ***
 [Job Opening!](/Bonvision/info/community/)
