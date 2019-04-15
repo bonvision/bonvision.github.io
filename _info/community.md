@@ -7,7 +7,7 @@ author_profile: true
 sidebar:
   nav: "info"
 ---
-[Forums](https://groups.google.com/forum/#!forum/bonsai-users): We will be using the Bonsai google forum for BonVision discussions, as some issues can be overlapping and related to the Bonsai framework rather than the specifics of BonVision. [<Issues>](https://docs.google.com/document/d/1E-9zvr7HRs2WJzgaSD3-eQoQBEoej2nCy3y4QBgNC7k/edit?usp=sharing)
+[Forums](https://groups.google.com/forum/#!forum/bonsai-users): We will be using the Bonsai google forum for BonVision discussions, as some issues can be overlapping and related to the Bonsai framework rather than the specifics of BonVision. [Issues](https://docs.google.com/document/d/1E-9zvr7HRs2WJzgaSD3-eQoQBEoej2nCy3y4QBgNC7k/edit?usp=sharing)
 
 Bonsai: [Node info](https://bonsai-rx.org//docs/observables/), [Bonsai Resources](https://bonsai-rx.org//resources/)
 
