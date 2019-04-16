@@ -14,8 +14,8 @@ Width: Width of the display
 
 The Rotation and Translation define the positioning of the screen.
 Rotation defines the rotation along the three axes (x, y, z) in radians.
-X: Roll
+X: Pitch
 Y: Yaw
-Z: Pitch
+Z: Roll
 
 Translation defines the position of the centre of the screen in x, y, and z coordinates.
