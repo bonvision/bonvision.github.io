@@ -1,5 +1,5 @@
 ---
-title: "Docs - Details of BonVision nodes"
+title: "BonVision node library"
 redirect_from: /docs
 excerpt: "A quick start guide to installing and running the Bonsai editor."
 last_modified_at: 
