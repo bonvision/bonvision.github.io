@@ -6,21 +6,22 @@ last_modified_at:
 author_profile: true
 ---
 
-BonVision is an open-source closed-loop visual environment generator developed by the [Saleem Lab](www.saleemlab.com) and [Solomon Lab](www.solomonlab.info) at the [UCL Institute of Behavioural Neuroscience](http://www.ibn.ucl.ac.uk/) in collaboration with [NeuroGears](https://neurogears.org/).
+BonVision is an open-source closed-loop visual environment generator developed by the [Saleem Lab](www.saleemlab.com) and [Solomon Lab](www.solomonlab.info) at the [UCL Institute of Behavioural Neuroscience](http://www.ibn.ucl.ac.uk/) in collaboration with [NeuroGEARS](https://neurogears.org/).
 
 *BonVision's key features include:*
 * Naturally closed-loop system based on reactive coding of the Bonsai framework
 * Handles 2D and 3D stimuli with equal ease
-* Display independent stimulus generation
+* Visual environment generated independent of display configuration
 * Graphical programming language of the Bonsai framework
-* Can be used for Augmented Reality, Virtual Reality of 2D visual stimuli
+* Can be used for Augmented Reality, Virtual Reality or 2D visual stimuli
+* Does not require the observer to be in a fixed position
 
 ***
 ## [NEWS: Job Opening!](https://bonvision.github.io/info/community/#job-opening)
 
 ***
-[Installation](/pages/Install)
+[Getting Started](/pages/001_info)
 
-[Getting Started](/pages/info)
+[Installation](/pages/002_Install)
 
 [Documentation for BonVision nodes](/docs/docs)
