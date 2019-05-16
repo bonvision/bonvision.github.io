@@ -6,13 +6,13 @@ last_modified_at:
 author_profile: false
 ---
 
-Install Bonsai from the [www.bonsai-rx.org](www.bonsai-rx.org). Here is the [link to the current version](https://bitbucket.org/horizongir/bonsai/downloads/Bonsai-2.4-preview.zip)
+Install Bonsai from the [www.bonsai-rx.org](https://www.bonsai-rx.org). This [link that will download the current version](https://bitbucket.org/horizongir/bonsai/downloads/Bonsai-2.4-preview.zip)
 
 Once you open Bonsai, choose 'Manage Packages' and add additional packages:
 * Starter Pack
 * Numerics
 * Windows Input Library
-* BonVision (version 0.1.0) - you will have to choose 'Include Prerelease' and search for 'BonVision'. 
+* BonVision (version 0.1.0) - this is a community package 
 
 ***
 # Requirements
