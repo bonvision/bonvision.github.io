@@ -10,7 +10,11 @@ sidebar:
 NEWS! [Job Opening](https://bonvision.github.io/info/community/#job-opening)
 
 
-[Forums](https://groups.google.com/forum/#!forum/bonsai-users): We will be using the Bonsai google forum for BonVision discussions, as some issues can be overlapping and related to the Bonsai framework rather than the specifics of BonVision. [Issues](https://docs.google.com/document/d/1E-9zvr7HRs2WJzgaSD3-eQoQBEoej2nCy3y4QBgNC7k/edit?usp=sharing)
+[Forums](https://groups.google.com/forum/#!forum/bonsai-users): We will be using the Bonsai google forum for BonVision discussions, as some issues can be overlapping and related to the Bonsai framework rather than the specifics of BonVision. 
+
+[Issues](https://docs.google.com/document/d/1E-9zvr7HRs2WJzgaSD3-eQoQBEoej2nCy3y4QBgNC7k/edit?usp=sharing)
+
+FAQ page coming soon (when you ask Q's!) 
 
 Bonsai: [Node info](https://bonsai-rx.org//docs/observables/), [Bonsai Resources](https://bonsai-rx.org//resources/)
 
