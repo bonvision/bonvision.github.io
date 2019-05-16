@@ -311,7 +311,7 @@ defaults:
       read_time: true
       comments: # true
       share: false
-      related: true
+      related: false
 
   # _demos
   - scope:
@@ -323,7 +323,7 @@ defaults:
       read_time: false
       comments: # true
       share: false
-      related: false
+      related: true
       sidebar:
         nav: "demos"
 
