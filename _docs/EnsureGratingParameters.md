@@ -6,15 +6,10 @@ last_modified_at:
 author_profile: false
 ---
 
-Draws a single axis-aligned colored quad.
-
 A BonVision primitive that specifies default values for optional parameters in the grating specification.
 
 ## Description
 This node, as the name suggests, ensures the the grating parameters are formatted before
-
-### Notes
-
 
 ## _Inputs:_ 
 * Needs a GratingSpecification node as an input to be able to run
