@@ -6,7 +6,7 @@ last_modified_at:
 author_profile: false
 ---
 
-* [Installation instructions](/pages/Install)
+* [Installation instructions](/pages/002_Install)
 * [Basic workflow logic for BonVision](/pages/01-Basic-Workflow)
 * [Display environment logic for BonVision](/pages/02-Display-Environment-basics)
 
