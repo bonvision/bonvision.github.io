@@ -3,7 +3,7 @@ main:
   - title: "About"
     url: /info/Home/
   - title: "Getting Started"
-    url: /pages/info/
+    url: /pages/001_info/
   - title: "Docs"
     url: /docs/docs/
   - title: "Demos"
@@ -13,10 +13,10 @@ main:
 
 pages:
     - title: Getting Started
-      url: /pages/info/
+      url: /pages/001_info/
       children:
       - title: "Installation"
-        url: /pages/Install/
+        url: /pages/002_Install/
       - title: "Basic Workflow"
         url: /pages/01-Basic-Workflow/
       - title: "Display Environment"
@@ -117,4 +117,4 @@ docs:
       url: /docs/
       children:
         - title: "RenderFrame"
-          url: /docs/ShaderNodes          
+          url: /docs/RenderFrame          
