@@ -65,6 +65,8 @@ docs:
         url: /docs/DrawTexturedModel/
       - title: "ParameterRange"
         url: /docs/ParameterRange/
+      - title: "BonVisionResources"
+        url: /docs/BonVisionResources/
       - title: "PrimitiveResources"
         url: /docs/PrimitiveResources/
       - title: "RangeAnimation"
