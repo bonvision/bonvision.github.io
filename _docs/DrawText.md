@@ -8,7 +8,7 @@ author_profile: false
 Draws affine transformed multi-line text using the specified style
 
 ## Description
-
+A node used to place text on the screen. For example, if using BonVision for human psychophysics, you can use it for instructions. 
 
 ### Notes
 Best used with _SphereMapping_ transformed coordinate frame

@@ -5,7 +5,8 @@ excerpt: "docs"
 last_modified_at: 
 author_profile: false
 ---
-Draws affine transformed multi-line text using the specified style
+
+Draws a textured and transformed 3D model stimulus.
 
 ## Description
 
@@ -13,20 +14,23 @@ Draws affine transformed multi-line text using the specified style
 ### Notes
 Best used with _SphereMapping_ transformed coordinate frame
 
-## _Inputs:_
-* Needs DrawStimulus (the tag for rendering a frame) as an input to be able to run
-* LocationX: x coordinate (this is in the units of the viewport?) (Default: 0)
-* LocationY: y coordinate (this is in the units of the viewport?) (Default: 0)
-* ExtentX: 
-* ExtentY: 
-* Angle:
-* **Text:**  
-* _(Text Style)_ Alignment
-* _(Text Style)_ Color
-* _(Text Style)_ Font
-* _(Text Style)_ LineAlignment
-* _(Text Style)_ TextRenderingHint
+## _Inputs:_ 
+* MeshName: (Default: Plane)(string)
+* RotationX: (Default: 0)
+* RotationY: (Default: 0)
+* RotationZ: (Default: 0)
+* ScaleX:(Default: 1)
+* ScaleY:(Default: 1)
+* ScaleZ:(Default: 1)
+* TranslationX: (Default: 0)
+* TranslationY: (Default: 0)
+* TranslationZ: (Default: 0)
+* Ambient:(Default: 0.2,0.2,0.2)
+* Diffuse:(Default: 0.8,0.8,0.8)
+* Specular:(Default: 0.8,0.8,0.8)
+* SpecularExponent:(Default: 10)
+
 
 ## _Outputs:_
-* This can be an end node
-* All the properties that are externalised can be sent forward as outputs.
+* _This can be an end node_
+* All the properties that are externalized can be sent forward as outputs.
