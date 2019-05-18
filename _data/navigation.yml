@@ -45,7 +45,7 @@ demos:
 
 docs:
     - title: Primitives
-      url: /docs/
+      url: /docs/docs/
       children:
       - title: DrawCheckerboard
         url: /docs/DrawCheckerboard/
@@ -72,7 +72,7 @@ docs:
       - title: "RangeAnimation"
         url: /docs/RangeAnimation/
     - title: "Environment"
-      url: /docs/
+      url: /docs/docs/
       children:
       - title: "DrawViewport"
         url: /docs/DrawViewport
@@ -91,7 +91,7 @@ docs:
       - title: "ViewingWindow"
         url: /docs/ViewingWindow
     - title: "Collections"
-      url: /docs/
+      url: /docs/docs/
       children:
       - title: "EnsureGratingParameters"
         url: /docs/EnsureGratingParameters
@@ -100,7 +100,7 @@ docs:
       - title: "SparseNoise"
         url: /docs/SparseNoise
     - title: Logging
-      url: /docs/
+      url: /docs/docs/
       children:
       - title: "EventLogger"
         url: /docs/EventLogger
@@ -109,14 +109,14 @@ docs:
       - title: "TimeStampedEventLogger"
         url: /docs/TimeStampedEventLogger
     - title: Generic
-      url: /docs/
+      url: /docs/docs/
       children:
       - title: "Angle"
         url: /docs/Angle
       - title: "SampleMany"
         url: /docs/SampleMany
     - title: Shaders
-      url: /docs/
+      url: /docs/docs/
       children:
         - title: "RenderFrame"
           url: /docs/RenderFrame          

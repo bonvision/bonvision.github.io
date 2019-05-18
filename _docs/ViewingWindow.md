@@ -12,7 +12,9 @@ Renders the sphere map from the perspective of a viewing window of the specified
 ViewingWindow defines a rectangular window (e.g. a screen) through which the interior surface of a sphere can be viewed.
 
 ### Notes
-![]({{ '/assets/Images/Docs/viewingWindowFigure.PNG' | relative_url }})
+
+![]({{ '/assets/Images/Docs/viewingWindowFigure.png' | relative_url }})
+
 E.g. the image above depicts an observer at H viewing a screen centred at E. This 2D image depicts the XZ plane (i.e. the azimuth plane). 
 
 H is the observer, and the line going through H and C is the Z-axis: the line directly in front of the observer.
