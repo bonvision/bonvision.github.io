@@ -13,7 +13,7 @@ ViewingWindow defines a rectangular window (e.g. a screen) through which the int
 
 ### Notes
 
-![]({{ '/assets/Images/Docs/viewingWindowFigure.png' | relative_url }})
+![]({{ '/Images/Docs/viewingWindowFigure.png' | relative_url }})
 
 E.g. the image above depicts an observer at H viewing a screen centred at E. This 2D image depicts the XZ plane (i.e. the azimuth plane). 
 
