@@ -7,6 +7,7 @@ author_profile: false
 ---
 
 This is a demo of creating a simple VR corridor (similar to Saleem et al., Nature, 2018).
+
 You can download this demo from the Demo Package. This is called _CorridorVR_. 
 
 ### Usage

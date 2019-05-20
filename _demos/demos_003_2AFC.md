@@ -1,11 +1,12 @@
 ---
-title: "Demos"
+title: "Demos: 2AFC"
 redirect_from: /demos
 excerpt: "A quick start guide to installing and running the Bonsai editor."
 last_modified_at: 
 author_profile: false
 ---
 This is a demo of a simple perception experiment run under a two-alternative forced choice paradigm.
+
 You can download this demo from the Demo Package. This is called _ori_discrimination_2afc_. 
 
 ### Usage
