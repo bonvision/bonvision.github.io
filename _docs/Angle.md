@@ -1,9 +1,25 @@
 ---
 title: "Angle"
-redirect_from: /docs
+redirect_from: /docs/
 excerpt: "docs"
 last_modified_at: 
 author_profile: false
 ---
 
-This node is to convert from degrees to radians. It is useful when some nodes need angle in radians as an input (e.g. ViewingWindow). 
+
+Represents a workflow property specifying a single-precision angle, in degrees.
+
+## Description
+
+
+### Notes
+
+
+## _Inputs:_ 
+* Value: insert the value of the angle, in degrees.
+
+
+## _Outputs:_
+* _This can be an end node_
+* All the properties that are externalized can be sent forward as outputs.
+
