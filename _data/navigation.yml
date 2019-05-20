@@ -34,15 +34,13 @@ demos:
     - title: Demos
       url: /demos/demos
       children:
-      - title: "Demo 2AFC"
-        url: /demos/demos/
-      - title: "Demo Physiology"
-        url: /demos/demos
       - title: "Demo VR"
-        url: /demos/demos
+        url: /demos/demos_001_VR/
       - title: "Demo AR"
-        url: /demos/demos
-
+        url: /demos/demos_002_AR/
+      - title: "Demo 2AFC"
+        url: /demos/demos_003_2AFC/
+      
 docs:
     - title: Primitives
       url: /docs/docs/
