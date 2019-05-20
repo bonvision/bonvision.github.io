@@ -13,4 +13,4 @@ You can download this demo from the Demo Package. This is called _ori_discrimina
 This demo shows how to run a simple perceptual experiment – here the amount of tilt that you need to notice that a pattern is not vertical. After pressing run, a fixation cross appears (to constrain where you are looking) and a small patch of grating appears above and to the right. Press the left or right arrows to report whether the lines of the grating are tilted counter-clockwise (left) or clockwise (right). You can track your performance by double-clicking the ‘Transpose’ icon that appears to the right of ‘Performance Tracking’ (after running the program) – this will show the fraction of ‘right’ responses.
 
 Below is an example of what part of the visual display looks like during an experiment. 
-![]({{ '/assets/Images/DemoGIFs/basic.gif' | relative_url }})
+![]({{ '/assets/Images/Demos/2AFC.gif' | relative_url }})

@@ -15,4 +15,4 @@ Just hit Start in the menu. You can move through the VR by using the scroll whee
 Once you reach the end of the corridor, you are teleported back to the start after a short interval. 
 
 Here is how the output of this looks like:
-![]({{ '/assets/Images/DemoGIFs/basic.gif' | relative_url }})
+![]({{ '/assets/Images/Demos/VR.gif' | relative_url }})
