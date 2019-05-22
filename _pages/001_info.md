@@ -20,5 +20,16 @@ author_profile: false
 
 * [Create basic Stimuli: Adding a sequence within observations, Adaptation example](/pages/05-Adding-sequence)
 
+***
+
+### Upcoming pages
+
 * [Create basic Stimuli: Logging](/pages/06-Logging) (_Coming soon_)(Todo: to explain how to set up logging data on the same stimulus as above)
 
+* How to calibrate curved displays - MeshMapping
+
+* Suggestions to synch ePhys or Calcium imaging systems to the stimuli
+
+* Workflow for Gamma calibrating a display
+
+* Workflow for automated screen position calibration
