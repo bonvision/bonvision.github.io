@@ -11,10 +11,14 @@ This will take you through the steps to draw two grating stimuli on the screen f
 
 ### Step 0
 Start Bonsai and start a new project
-![](BonVision/assets/Images/Creating_Basic_Step0.PNG' | relative_url }})
+![]({{ '/assets/Images/Creating_Basic_Step0.PNG' | relative_url }})
 
 ### Step 1: Initialize
-All Bonvision stimuli start with a **RenderFrame** node.
+All BonVision workflows need to start by creating a display window and loading the basic resource. This is done with three nodes: CreateWindow, BonVisionResources and LoadResources.
+![]({{ '/assets/Images/CreateBasic/Creating_Basic_Step0.PNG' | relative_url }})
+
+### Step 2: Add RenderFrame
+Stimuli start with a **RenderFrame** node.
 This node passed the render command from the graphics card. 
 ![]({{ '/assets/Images/CreateBasic/Creating_Basic_Step1_renderFrame.PNG' | relative_url }})
 
@@ -27,13 +31,13 @@ This defined coordinates of the window as -1 to 1 along x and -1 to 1 along y
 
 ***
 
-### Step 2: Add stimulus
+### Step 3: Add stimulus
 Now we are ready to draw stimuli. We can add the node **DrawGrating**
 ![]({{ '/assets/Images/CreateBasic/Creating_Basic_Step3_1_drawGratings.PNG' | relative_url }})
 
 ***
 
-### Step 3: Test the grating
+### Step 4: Test the grating
 You can have a look at the stimulus by hitting **Start** in the options. _Note: on some occasions you might not see the window, in case the window location is outside the screen. In this case, double click 'RenderFrame' and adjust the location parameter (see troubleshooting below)
 ![]({{ '/assets/Images/CreateBasic/Creating_Basic_Step3_2_drawBasicStart.PNG' | relative_url }})
 
