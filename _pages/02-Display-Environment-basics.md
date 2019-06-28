@@ -35,7 +35,7 @@ For 3D scenes, there is a straightforward solution: render the visual scene once
 
 Using the cube mapping pipeline, one can then point a viewing window at any direction and get a correct rendition of the surrounding environment at those pixels:
 
-![CubeMapEnvironment]({{ '/assets/Images/DisplayLogic/CubeMapEnvironment.gif' | relative_url }})
+![CubemapEnvironment]({{ '/assets/Images/DisplayLogic/CubemapEnvironment.gif' | relative_url }})
 
 
 ## 2D Stimuli
