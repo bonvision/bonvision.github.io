@@ -7,86 +7,57 @@ author_profile: false
 toc: true
 ---
 
-Visual neuroscience is almost always carried out in eye-centric coordinate, which defines stimuli in terms of _Visual angle_ subtended at the eye. This helps keep the definition of the image that reaches the retina consistent. However, visual displays work in pixel coordinates (with specific physical characteristics) and to draw accurate stimuli one has to calculate the conversion between the two coordinate frames. This requires a new transform function to be calculated for any display, and few programs are available to help with this. 
+Visual neuroscience is almost always carried out in eye-centric coordinates, which defines stimuli in terms of _visual angle_ subtended at the eye. This helps keep the definition of the image that reaches the retina consistent. However, visual displays work in pixel coordinates (with specific physical characteristics) and to draw accurate stimuli one has to calculate the conversion between the two coordinate frames. This requires a new transform function to be calculated for any display, and few programs are available to help with this.
 
-The general solution we have with BonVision is to separate the [_**Stimulus Generation**_](/pages/Display-Environment-basics#stimulus-generation) and the [_**Display**_](/pages/Display-Environment-basics#display-types) aspects of the process. 
-* [_**Stimulus Generation**_](/pages/Display-Environment-basics#stimulus-generation): Stimuli are always generated and rendered in eye-centric coordinate frame on virtual surfaces. 
-* [_**Display**_](/pages/Display-Environment-basics#display-types): And the visual displays (screens/projectors) act as windows into the rendered images. 
+In the following sections we describe the main assumptions and design decisions in BonVision for dealing with a broad family of visual stimuli, both 2D and 3D.
 
-# Stimulus Generation
-BonVision has the following solutions for _**Stimulus Generation**_:
-## A. Sphere Mapping
-### _This is best for creating 2D stimuli_
-Note: Needs a Display object: preferably a ViewingWindow
+# Environmental mapping
 
-In this case, stimuli are always rendered onto the inside of a sphere. This allows easy eye-centric definitions pf stimuli in visual angle units. The displays are then windows that observe these rendered stimuli. We use Spherical coordinates to define all stimulus parameters in this case. 
+One of the major goals for BonVision was to unify the specification of both 2D and 3D visual environments into a common representation that would allow sharing experiments across multiple display configurations, including domes, toruses, display grids and other geometrical arrangements.
 
-![]({{ '/assets/Images/DisplayLogic/SphericalCoord.png' | relative_url }})
+To achieve this, the main design decision was to decouple the [_**Display**_](/pages/Display-Environment-basics#display-types) environment from the [_**Stimulus Generation**_](/pages/Display-Environment-basics#stimulus-generation) logic. This allows users of BonVision to write tasks in standard units (either degrees of visual field for 2D or metric units for 3D), and then run them unmodified on any correctly calibrated rig.
 
-[The details of the implementation of Sphere mapping](https://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro/UV_Map_Basics)
+We use [_**cube mapping**_](https://en.wikipedia.org/wiki/Cube_mapping) as a way to efficiently specify the entire surrounding environment of an experimental subject, both for 2D and 3D environments. In this technique, 6 different faces of a cube, each covering exactly a 90º field of view volume, are combined to describe the entire 360º environment (a.k.a. a skybox):
 
-## B. Cube Mapping
-### _This is best for creating 3D stimuli, for Virtual or Augmented Reality Systems_
+![Skybox Example](https://upload.wikimedia.org/wikipedia/commons/b/b4/Skybox_example.png)
 
-Note: Needs a Display object: preferably a PerspectiveViewingWindow
+At runtime, each screen becomes a window that looks out into that surrounding environment, with each pixel uniquely specifying a direction vector out into the world. In a cubemap, this direction vector is used to sample the correct pixels from the cubemap textures, therefore projecting onto the screen the corresponding portion of the visual field.
 
-[The details of Cube Mapping are explained here:](https://en.wikipedia.org/wiki/Cube_mapping)
+![CubeMapping]({{ '/assets/Images/DisplayLogic/CubeMapping.svg' | relative_url }})
 
-In this case all the stimuli are created in eye-centric physical coordinates (centimeters for example) and rendered onto a unit Cube. The displays (Perspective cameras) are then windows into these rendered images.
-*probably easiest with a whiteboard drawing here*
+Once the cube mapping rendering pipeline is in place, we can very efficiently generate an arbitrary number of projections into the visual space for each display in the experiment. The remaining challenge is then how to generate the 6 faces of the cubemap in a way that accurately represents the visual field surrounding the subject.
 
-### For Virtual Reality (VR)
-VR can be easily defined as a situation where the eye, and the screens (windows) are fixed positions, while the all the objects (or VR environment) moves across the eye.
+## 3D Stimuli
 
-![]({{ '/assets/Images/DisplayLogic/VRcartoon.png' | relative_url }})
+For 3D scenes, there is a straightforward solution: render the visual scene once for each face of the cube, with a perspective 90º field of view, as seen from the observer. Each rendered perspective will fill exactly one face of the cube. For example:
 
- Example rendering to be added here
+![CubeMapSkybox]({{ '/assets/Images/DisplayLogic/CubeMapSkybox.png' | relative_url }})
 
-### For Augmented Reality (AR)
+Using the cube mapping pipeline, one can then point a viewing window at any direction and get a correct rendition of the surrounding environment at those pixels:
 
-This is a scenario where, generally, the screens remain in a fixed position and the animal can move around. Since we have an eye-centric coordinate frame, the objects and the screen move around to generate an AR. 
-
-![]({{ '/assets/Images/DisplayLogic/ARcartoon.jpg' | relative_url }})
-
- Example rendering to be added here
-
-## C. Normalized Viewport
-### _This is convenient while designing and testing, prior to an actual experiment_
-It just scales the screen from -1 to 1 on the two axes
-
-![]({{ '/assets/Images/DisplayLogic/NormalizedViewport.png' | relative_url }})
-
-# Display Types
-BonVision has the following solutions for _**DisplayTypes**_:
-## I. ViewingWindow
-### _This is best for creating 2D stimuli_
-This is a flat screen defined by 6 measurements (for a complete discription). Multiple display objects can be added by just adding additional ViewingWindows.
-
-These are the measures that need to be added for each display object:
-1. Distance of left bottom corner (from eye)
-2. Distance of left top corner (from eye)
-3. Distance of right top corner (from eye)
-4. Distance of right bottom corner (from eye)
-5. Azimuth (horizontal angle from straight ahead) of the centre of the display
-6. Elevation (vertical angle from horizon) of the centre of the display
+![CubeMapEnvironment]({{ '/assets/Images/DisplayLogic/CubeMapEnvironment.gif' | relative_url }})
 
 
-This is an example of the same stimulus rendered on different displays:
+## 2D Stimuli
 
-![]({{ '/assets/Images/DisplayLogic/DisplayWindowLogic-01.png' | relative_url }})
-![]({{ '/assets/Images/DisplayLogic/DisplayWindowLogic-03.png' | relative_url }})
-![]({{ '/assets/Images/DisplayLogic/DisplayWindowLogic-05.png' | relative_url }})
+For 2D scenes, such as those containing gabor patches, checkerboards, gratings, random dots and so on, we would like to specify our environments in an orthonormal space, where X and Y represent longitude and latitude, respectively, in degrees of visual field. For example, below is a checkerboard stimulus covering 100 degrees of visual field horizontally and vertically, where each square subtends 10 degrees:
 
-Images on A, B and C
+![Checkerboard]({{ '/assets/Images/DisplayLogic/CheckerBoard.jpg' | relative_url }})
 
-## II. PerspectiveViewingWindow
-### _This is best for creating 3D VR/AR stimuli_
+To correctly display this environment using the cubemap rendering approach, we need to map this 2D orthonormal space into a 3D spherical environment, which we can then cubemap the same way as for 3D environments. This is essentially the reverse cartographer's problem of specifying a [_**map projection**_](https://en.wikipedia.org/wiki/Map_projection) of the sphere onto a planar surface.
 
-## III. MeshMapping
-### _When using a projector in conjunction with a mirror or lens_
-Lens or mirrors cause distortions in the image, such that pixels across the display surface might not have the same physical dimensions. In this case, one would have to measure the distortions and use these to warp the images to display them correctly. In the case of 3D worlds, they might be best use in conjunction with multiple PerspectiveViewingWindows looking at different parts of the world.
+Unfortunately, there is no perfect way of mapping a sphere onto a plane. Different transformations will preserve different features, e.g. area-preserving, distance-preserving, shape-preserving, etc, and in general we will always need to tradeoff one against the other. For example, a popular mapping is the equirectangular, or cylindrical mapping:
 
-## IV. GammaCorrection
-### _When using a projector in conjunction with a mirror or lens_
-This is simple intensity mapping of the three colors, to make sure the stimuli are linear. It uses a simple LUT (Look-up-table), for Red, Green and Blue. 
+![CylindricalMapping]({{ '/assets/Images/DisplayLogic/CylindricalMapping.png' | relative_url }})
 
+This projection features asymmetrical distortion in both axes, which preserves the meridian lines as vertical lines in the mapping, and introduces distortion around the poles:
+
+![CheckerboardMapped]({{ '/assets/Images/DisplayLogic/CheckerBoardMapped.jpg' | relative_url }})
+
+Other projections remove the distortion at the poles by distributing it across different portions of the image. For example, the icosphere tiles the surface using multiple triangle subdivisions:
+
+![IcosphereMapping]({{ '/assets/Images/DisplayLogic/IcosphereMapping.png' | relative_url }})
+
+The disadvantage is that the arrangement of the planar mapping is not orthonormal anymore, especially at the poles. At the moment BonVision makes use of a cylindrical projection, but improvements are being discussed at the moment to support different kinds of spherical mapping strategies to cover a larger number of cases.
+
+[More details on spherical mapping from the point of view of modelling software](https://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro/UV_Map_Basics)

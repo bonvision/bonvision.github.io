@@ -9,6 +9,7 @@ author_profile: false
 * [Installation instructions](/pages/002_Install)
 * [Basic workflow logic for BonVision](/pages/01-Basic-Workflow)
 * [Display environment logic for BonVision](/pages/02-Display-Environment-basics)
+* [Stimulus generation logic for BonVision](/pages/02a-Stimulus-Generation)
 
 ***
 

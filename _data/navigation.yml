@@ -21,6 +21,8 @@ pages:
         url: /pages/01-Basic-Workflow/
       - title: "Display Environment"
         url: /pages/02-Display-Environment-basics/
+      - title: "Stimulus Generation"
+        url: /pages/02a-Stimulus-Generation/
       - title: "Basic Stimulus"
         url: /pages/03-Creating-Basic-Stimuli/
       - title: "Stimulus Series"
