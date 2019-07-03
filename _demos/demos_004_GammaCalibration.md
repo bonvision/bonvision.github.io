@@ -28,7 +28,7 @@ You would require a _light sensor_ and a _data acquisition device_
 * Open-source photodiode from Champalimaud Foundations’s Hardware Platform [link](https://www.cf-hw.org/harp/behavior#h.p_uMPRuA1sNnEB)
 * Thorlabs amplified photodetector [link](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=2655)
 
-**Data Acquisition device:** We ran our tests on an Arduino board [https://www.arduino.cc], and a HARP board [https://www.cf-hw.org/harp]. The main requirement is that you would need to be able to read it with Bonsai [https://bonsai-rx.org/] (it covers most DAQs).
+**Data Acquisition device:** We ran our tests on an [Arduino board](https://www.arduino.cc), and a [HARP board](https://www.cf-hw.org/harp). The main requirement is that you would need to be able to read it with Bonsai (it covers most DAQs).
 
 --- 
 
@@ -38,12 +38,15 @@ Workflow: *GammaCalibration_Test*
 
 This workflow can be used to test the linearity of the monitor with or without the gamma correction in BonVision. 
 To test without the GammaCorrection, disable the GammaCorrection node in the workflow here. 
+
 ![]({{ '/assets/Images/Demos/Gamma_highlightGammaNode.PNG' | relative_url }})
 
 ### Setup: 
 
 1. Connect the sensor to an analogue channel of the DAQ and setup the Analogue input node as appropriate for your DAQ. Example below shows our setting for an Arduino
+
 ![]({{ '/assets/Images/Demos/Gamma_highlightAnalogue.PNG' | relative_url }})
+
 2. Place the sensor such that it facing the monitor (or in the light path if it is a projector). Make sure there are no additional light sources to the sensor.
 
 ### Test:
@@ -56,6 +59,7 @@ There are a few setting you might have to play with:
 * You might have to reduce the spatial frequency of the DrawGrating node depending on the size of the display and sensor.
 
 Below is an example of the measurement made for a monitor. Note there is a curve (rather than line) on the left, and the sine wave has peaks sharper than the troughs.
+
 ![]({{ '/assets/Images/Demos/Gamma_ExampleNoCorrection.PNG' | relative_url }})
 
 ---
