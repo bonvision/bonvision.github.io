@@ -5,9 +5,6 @@ excerpt: "A quick start guide to installing and running the Bonsai editor."
 last_modified_at: 
 author_profile: false
 ---
-
-This is a demo of a simple perception experiment run under a two-alternative forced choice paradigm.
-
 The gamma calibration workflows can be [found here](https://github.com/amansaleem/BonVision/tree/master/BonVision%20Examples).
 
 ### What is gamma calibration?
@@ -25,11 +22,12 @@ https://www.graphics.cornell.edu/~westin/gamma/gamma.html
 
 # Using BonVision for Gamma Calibration
 
-##Hardware requirements: You would require a *light sensor* and a *data acquisition device*
+##Hardware requirements: You would require a _light sensor_ and a _data acquisition device_
 
 **Light sensor:** We have tested these scripts using two sensors – 
 * Open-source photodiode from Champalimaud Foundations’s Hardware Platform [link](https://www.cf-hw.org/harp/behavior#h.p_uMPRuA1sNnEB)
 * Thorlabs amplified photodetector [link](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=2655)
+
 **Data Acquisition device:** We ran our tests on an Arduino board [https://www.arduino.cc], and a HARP board [https://www.cf-hw.org/harp]. The main requirement is that you would need to be able to read it with Bonsai [https://bonsai-rx.org/] (it covers most DAQs).
 
 --- 
@@ -50,7 +48,7 @@ To test without the GammaCorrection, disable the GammaCorrection node in the wor
 
 ###Test:
 
-*Run the workflow!*
+_Run the workflow!_
 
 There are a few setting you might have to play with:
 * Position and size of the display window. These can be setup in the option of the CreateWindow node.
