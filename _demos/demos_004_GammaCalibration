@@ -5,11 +5,13 @@ excerpt: "A quick start guide to installing and running the Bonsai editor."
 last_modified_at: 
 author_profile: false
 ---
+
 This is a demo of a simple perception experiment run under a two-alternative forced choice paradigm.
 
 The gamma calibration workflows can be [found here](https://github.com/amansaleem/BonVision/tree/master/BonVision%20Examples).
 
 ### What is gamma calibration?
+
 Consider a pixel on your monitor. Ideally, when your program tell the computer that you want the pixel to have intensity of 10 photons/s the program would send that number to the video card, and the video card would send that number to the monitor, and the monitor would display it. Then when your program doubled the intensity, so the intensity of the pixel would also double. This would be a linear system – doubling the number in your program would double the amount of light emitted by the pixel. 
  
 Computer monitors and projectors don't quite work like this. For various reasons there are non-linearities between the program and the pixel. For example, doubling the number in the program might triple the intensity of the pixel, and this might depend on the intensity you started with. We would like to know the relationship between the numbers our computer program is specifying and the pixel intensity, and thereby compensate for these non-linearities. This is the process of gamma calibration.
@@ -22,7 +24,9 @@ https://en.wikipedia.org/wiki/Gamma_correction
 https://www.graphics.cornell.edu/~westin/gamma/gamma.html
 
 # Using BonVision for Gamma Calibration
+
 ##Hardware requirements: You would require a *light sensor* and a *data acquisition device*
+
 **Light sensor:** We have tested these scripts using two sensors – 
 * Open-source photodiode from Champalimaud Foundations’s Hardware Platform [link](https://www.cf-hw.org/harp/behavior#h.p_uMPRuA1sNnEB)
 * Thorlabs amplified photodetector [link](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=2655)
@@ -39,11 +43,13 @@ To test without the GammaCorrection, disable the GammaCorrection node in the wor
 ![]({{ '/assets/Images/Demos/Gamma_highlightGammaNode.png' | relative_url }})
 
 ###Setup: 
+
 1. Connect the sensor to an analogue channel of the DAQ and setup the Analogue input node as appropriate for your DAQ. Example below shows our setting for an Arduino
 ![]({{ '/assets/Images/Demos/Gamma_highlightAnalogue.png' | relative_url }})
 2. Place the sensor such that it facing the monitor (or in the light path if it is a projector). Make sure there are no additional light sources to the sensor.
 
 ###Test:
+
 *Run the workflow!*
 
 There are a few setting you might have to play with:
@@ -57,11 +63,14 @@ Below is an example of the measurement made for a monitor. Note there is a curve
 ---
 
 # Making the monitor linear
+
 ### Option 1 (Preferred) – go with the hardware
+
 The hardware of most modern displays are typically linear (like LCD and LED display) originally. However, a gamma is added on as it perceptually ‘looks better’. 
 This happens at two levels, in the display’s settings (every monitor is different) and in the OS. In windows this is under advanced display settings and ‘color calibration’. Move through the steps and max out the correction (it’ll make the monitor look brighter and greyer. Re-run the test with those settings to check if this made the display linear. If not, continue to option 2.
 
 ### Option 2 – use BonVision to Calibrate
+
 There are two workflows: GammaCalibration_Fit & GammaCalibration_FitGray. 
 Follow steps similar to those above in Testing the Display to run these scripts. The look-up image is saved where specified in the ‘FileName’ parameter of the ‘SaveImage‘ node. 
 You can edit the CreateGammaLookup.cs in the ‘Extensions’ folder within to have a different fitting if you prefer. 
