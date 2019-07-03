@@ -4,7 +4,9 @@ redirect_from: /demos
 excerpt: "A quick start guide to installing and running the Bonsai editor."
 last_modified_at: 
 author_profile: false
+toc: true
 ---
+
 The gamma calibration workflows can be [found here](https://github.com/amansaleem/BonVision/tree/master/BonVision%20Examples).
 
 ### What is gamma calibration?

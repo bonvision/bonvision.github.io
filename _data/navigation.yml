@@ -42,6 +42,8 @@ demos:
         url: /demos/demos_002_AR/
       - title: "Demo 2AFC"
         url: /demos/demos_003_2AFC/
+      - title: "Gamma Calibration"
+        url: /demos/demos_004_GammaCalibration/
       
 docs:
     - title: Primitives
