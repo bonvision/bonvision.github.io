@@ -24,7 +24,7 @@ https://www.graphics.cornell.edu/~westin/gamma/gamma.html
 
 # Using BonVision for Gamma Calibration
 
-##Hardware requirements: You would require a _light sensor_ and a _data acquisition device_
+## Hardware requirements: You would require a _light sensor_ and a _data acquisition device_
 
 **Light sensor:** We have tested these scripts using two sensors – 
 * Open-source photodiode from Champalimaud Foundations’s Hardware Platform [link](https://www.cf-hw.org/harp/behavior#h.p_uMPRuA1sNnEB)
@@ -42,13 +42,13 @@ This workflow can be used to test the linearity of the monitor with or without t
 To test without the GammaCorrection, disable the GammaCorrection node in the workflow here. 
 ![]({{ '/assets/Images/Demos/Gamma_highlightGammaNode.png' | relative_url }})
 
-###Setup: 
+### Setup: 
 
 1. Connect the sensor to an analogue channel of the DAQ and setup the Analogue input node as appropriate for your DAQ. Example below shows our setting for an Arduino
 ![]({{ '/assets/Images/Demos/Gamma_highlightAnalogue.png' | relative_url }})
 2. Place the sensor such that it facing the monitor (or in the light path if it is a projector). Make sure there are no additional light sources to the sensor.
 
-###Test:
+### Test:
 
 _Run the workflow!_
 
