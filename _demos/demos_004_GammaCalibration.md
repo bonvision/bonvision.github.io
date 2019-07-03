@@ -17,14 +17,12 @@ Computer monitors and projectors don't quite work like this. For various reasons
  
 We calibrate by creating a look-up table, consisting of 256 columns and 3 rows (one for each of the monitor primaries – red, green and blue). When we send an image to the video-card, the last thing we do is pass the image through this look-up table.
 
-Additional info at:
-https://learnopengl.com/Advanced-Lighting/Gamma-Correction
-https://en.wikipedia.org/wiki/Gamma_correction
-https://www.graphics.cornell.edu/~westin/gamma/gamma.html
+Additional info at: [LearnOpenGL](https://learnopengl.com/Advanced-Lighting/Gamma-Correction), [Wikipedia](https://en.wikipedia.org/wiki/Gamma_correction), or [here](https://www.graphics.cornell.edu/~westin/gamma/gamma.html).
 
 # Using BonVision for Gamma Calibration
 
-## Hardware requirements: You would require a _light sensor_ and a _data acquisition device_
+## Hardware requirements: 
+You would require a _light sensor_ and a _data acquisition device_
 
 **Light sensor:** We have tested these scripts using two sensors – 
 * Open-source photodiode from Champalimaud Foundations’s Hardware Platform [link](https://www.cf-hw.org/harp/behavior#h.p_uMPRuA1sNnEB)
@@ -40,12 +38,12 @@ Workflow: *GammaCalibration_Test*
 
 This workflow can be used to test the linearity of the monitor with or without the gamma correction in BonVision. 
 To test without the GammaCorrection, disable the GammaCorrection node in the workflow here. 
-![]({{ '/assets/Images/Demos/Gamma_highlightGammaNode.png' | relative_url }})
+![]({{ '/assets/Images/Demos/Gamma_highlightGammaNode.PNG' | relative_url }})
 
 ### Setup: 
 
 1. Connect the sensor to an analogue channel of the DAQ and setup the Analogue input node as appropriate for your DAQ. Example below shows our setting for an Arduino
-![]({{ '/assets/Images/Demos/Gamma_highlightAnalogue.png' | relative_url }})
+![]({{ '/assets/Images/Demos/Gamma_highlightAnalogue.PNG' | relative_url }})
 2. Place the sensor such that it facing the monitor (or in the light path if it is a projector). Make sure there are no additional light sources to the sensor.
 
 ### Test:
@@ -58,7 +56,7 @@ There are a few setting you might have to play with:
 * You might have to reduce the spatial frequency of the DrawGrating node depending on the size of the display and sensor.
 
 Below is an example of the measurement made for a monitor. Note there is a curve (rather than line) on the left, and the sine wave has peaks sharper than the troughs.
-![]({{ '/assets/Images/Demos/Gamma_ExampleNoCorrection.png' | relative_url }})
+![]({{ '/assets/Images/Demos/Gamma_ExampleNoCorrection.PNG' | relative_url }})
 
 ---
 
