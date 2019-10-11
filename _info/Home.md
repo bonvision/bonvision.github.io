@@ -17,7 +17,10 @@ BonVision is an open-source closed-loop visual environment generator developed b
 * Does not require the observer to be in a fixed position
 
 ***
-## [NEWS: Job Opening!](https://bonvision.github.io/info/community/#job-opening)
+## NEWS: BonVision at SfN2019
+
+Check us out at dynamic poster DP07 on Monday, 21st at SfN 2019. 
+We are going meta: the poster on BonVision will be displayed through BonVision!
 
 ***
 [Getting Started](/pages/001_info)
