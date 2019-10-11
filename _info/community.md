@@ -22,8 +22,9 @@ Bonsai: [Node info](https://bonsai-rx.org//docs/observables/), [Bonsai Resources
 A collection of example workflows.
 
 ### Current User Groups
-1. Saleem lab, UCL, London
-2. Solomon lab, UCL, London
+1. [Saleem lab, UCL, London](https://www.saleemlab.com)
+2. [Solomon lab, UCL, London](https://www.solomonlab.info)
+3. [International Brain Lab](https://www.internationalbrainlab.com/)
 
 ### Get Involved
 If you would like to help us develop additional features for BonVision or add to the database of example scripts, please get in touch with us at: aman dot saleem at ucl.ac.uk or g dot lopes at neurogears.org
