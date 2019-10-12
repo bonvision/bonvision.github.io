@@ -25,6 +25,7 @@ A collection of example workflows.
 1. [Saleem lab, UCL, London](https://www.saleemlab.com)
 2. [Solomon lab, UCL, London](https://www.solomonlab.info)
 3. [International Brain Lab](https://www.internationalbrainlab.com/)
+4. [Ranson Lab, UAB/UIC, Barcelona, Spain](https://www.ransonlab.net)
 
 ### Get Involved
 If you would like to help us develop additional features for BonVision or add to the database of example scripts, please get in touch with us at: aman dot saleem at ucl.ac.uk or g dot lopes at neurogears.org
