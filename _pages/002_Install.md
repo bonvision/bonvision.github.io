@@ -6,7 +6,7 @@ last_modified_at:
 author_profile: false
 ---
 
-Install Bonsai from the [www.bonsai-rx.org](https://www.bonsai-rx.org). This [link that will download the current version](https://bitbucket.org/horizongir/bonsai/downloads/Bonsai-2.4-preview.zip)
+Install Bonsai from the [www.bonsai-rx.org](https://www.bonsai-rx.org). This [link that will download the current version](https://bonsai-rx.org//docs/installation/)
 
 Once you open Bonsai, choose 'Manage Packages' and add additional packages:
 * Starter Pack
