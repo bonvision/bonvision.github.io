@@ -18,7 +18,7 @@ Bonsai: [Node info](https://bonsai-rx.org//docs/observables/), [Bonsai Resources
 
 ### Example Scripts
 
-[Examples:](https://github.com/amansaleem/BonVision/tree/master/BonVision%20Examples)
+[Examples:](https://github.com/bonvision/BonVision/tree/master/Examples)
 A collection of example workflows.
 
 ### Current User Groups
