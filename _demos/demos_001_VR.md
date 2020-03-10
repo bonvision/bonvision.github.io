@@ -8,7 +8,7 @@ author_profile: false
 
 This is a demo of creating a simple VR corridor (similar to Saleem et al., Nature, 2018).
 
-You can download this demo from the [Demo Package](https://github.com/amansaleem/BonVision/tree/master/BonVision%20Examples). This is called _CorridorVR_. 
+You can download this demo from the [Demo Package](https://github.com/bonvision/BonVision/tree/master/BonVision%20Examples). This is called _CorridorVR_. 
 
 ### Usage
 Just hit Start in the menu. You can move through the VR by using the scroll wheel of the mouse. 
