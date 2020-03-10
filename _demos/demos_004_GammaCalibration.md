@@ -7,7 +7,7 @@ author_profile: false
 toc: true
 ---
 
-The gamma calibration workflows can be [found here](https://github.com/amansaleem/BonVision/tree/master/BonVision%20Examples).
+The gamma calibration workflows can be [found here](https://github.com/bonvision/BonVision/tree/master/Examples/).
 
 ### What is gamma calibration?
 
