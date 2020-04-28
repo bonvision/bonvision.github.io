@@ -51,7 +51,7 @@ demos:
       - title: "Gamma Calibration"
         url: /demos/demos_004_GammaCalibration/
       - title: "Display Position Calibration"
-        url: /demos/demos_005_DisplayCalibration.md/
+        url: /demos/demos_005_DisplayCalibration/
       
 docs:
     - title: Primitives
