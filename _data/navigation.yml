@@ -31,6 +31,8 @@ pages:
         url: /pages/05-Adding-sequence/
       - title: "Logging"
         url: /pages/06-Logging/
+      - title: "Synching"
+        url: /pages/07-Synching/
 
 demos:
     - title: Demos
@@ -44,6 +46,8 @@ demos:
         url: /demos/demos_003_2AFC/
       - title: "Gamma Calibration"
         url: /demos/demos_004_GammaCalibration/
+      - title: "Display Position Calibration"
+        url: /demos/demos_005_DisplayCalibration.md/
       
 docs:
     - title: Primitives
