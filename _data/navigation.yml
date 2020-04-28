@@ -33,6 +33,10 @@ pages:
         url: /pages/06-Logging/
       - title: "Synching"
         url: /pages/07-Synching/
+      - title: "Grating Series"
+        url: /pages/08-GratingSeries/
+      - title: "Stimulus Series List"
+        url: /pages/09-SeriesList/
 
 demos:
     - title: Demos
