@@ -26,7 +26,7 @@ Measure the physical distances and angles. This can get a little tricky with get
 ## __2. Automated calibration with camera__ 
 We developed these workflows to enable easy and effective calibration of display position. Conceptually, this is done using a calibrated camera (we provide a workflow to calibrate here) and [Aruco markers](https://docs.opencv.org/trunk/d5/dae/tutorial_aruco_detection.html) to identify the 3D coordinates of the display relative to the subject. 
 
-To make it convenient, we have the option of calibrating the display by using just your phone camera. You would need to just take pictures of the setup as described below and upload the images on a system running Bonsai. 
+_NOTE: To make it convenient, we have the option of calibrating the display by using just your phone camera. You would need to just take pictures of the setup as described below and upload the images on a system running Bonsai._
 
 The workflow identifies the Aruco patterns on the display and in the subject's position, using a calibrated camera, and automatically calculates the display's position. This automatic calibration has three workflow associated with it (each of them is expanded on below):
 _A. Measuring camera intrinsics_
