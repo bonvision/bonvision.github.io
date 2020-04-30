@@ -15,15 +15,19 @@ This is to create a stimulus series, by loading parameters from either a csv fil
 This is the workflow called "__X__" in the examples folder. 
 
 Here we start with the workflow at the end of [Grating Series](/pages/08-GratingSeries), and substitute the _CreateGratingTrial & GratingSequence_ nodes with a _CreateObservable_ group and a _Concat_:
-
+![]({{ '/assets/Images/StimulusSeries/StimSeries-A1.PNG' | relative_url }})
 
 Within the CreateObservable group:
-
+![]({{ '/assets/Images/StimulusSeries/StimSeries-A1-1CreateObservable.PNG' | relative_url }})
+![]({{ '/assets/Images/StimulusSeries/StimSeries-A1-1CreateObservable2.PNG' | relative_url }})
+![]({{ '/assets/Images/StimulusSeries/StimSeries-A1-1CreateObservable3.PNG' | relative_url }})
+![]({{ '/assets/Images/StimulusSeries/StimSeries-A1-1CreateObservable4.PNG' | relative_url }})
 
 ## Stimulus series using a collection
 This is the workflow called "__X__" in the examples folder. 
 
 Here we start with the workflow from the start of [Grating Series](/pages/08-GratingSeries), and substitute the GratingSpecification node with a _CSharpTransform_ like this:
-
+![]({{ '/assets/Images/StimulusSeries/StimSeries-B1.PNG' | relative_url }})
 
 and this is an example of the C# code in the extensions folder
+![]({{ '/assets/Images/StimulusSeries/CSharpCode.PNG' | relative_url }})
