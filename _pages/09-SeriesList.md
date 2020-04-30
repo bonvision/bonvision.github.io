@@ -31,6 +31,7 @@ And here is an example where the parameter is converted into the correct units (
 This is the workflow called "__X__" in the examples folder. 
 
 Here we start with the workflow from the start of [Grating Series](/pages/08-GratingSeries), and substitute the GratingSpecification node with a _CSharpTransform_ like this:
+
 ![]({{ '/assets/Images/StimulusSeries/StimSeries-B1.PNG' | relative_url }})
 
 and this is an example of the C# code in the extensions folder
