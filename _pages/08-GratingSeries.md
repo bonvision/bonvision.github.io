@@ -96,4 +96,4 @@ Then add the mapping. __Name__ will show a drop-down menu of the properties from
 ![]({{ '/assets/Images/GratingSeries/GratingSeriesB1-PropMap4.PNG' | relative_url }})
 
 
-The page [Stimulus Series]().
+The page [Stimulus Series]() has a more generic version of creating the same stimulus, without the benefit of having the additional nodes for creating grating stimuli.
