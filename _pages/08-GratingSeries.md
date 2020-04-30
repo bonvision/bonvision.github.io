@@ -7,8 +7,6 @@ author_profile: false
 toc: true
 ---
 
-## Under Construction
-
 As grating stimuli are commonly used in visual physiology experiments, we have created a few nodes that make it convenient to design experiments very easily. These include the nodes _GratingTrial, CreateGratingTrial & GratingSpecifications_. This page will elaborate two ways of creating a grating series experiment. The first, simplest is to use the pre-designed nodes. The second option discusses an option of loading the list of parameters from a csv file.
 
 _NOTE: On the page [Stimulus Series](/pages/09-SeriesList) we show two other methods of creating such a stimulus without using the pre-designed nodes, which can adapted for any stimulus type that you would like to use._
