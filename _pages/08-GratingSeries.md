@@ -31,7 +31,7 @@ You can then specify the parameters of the stimuli to run by clicking on the Col
 Each row in this is one stimulus (set of parameters) or trial. You can add the specific values by adding numbers in the corresponding ... 
 ![]({{ '/assets/Images/GratingSeries/GratingSeriesA1-3.PNG' | relative_url }})
 
-There are various feature in the editor, so play around with adding parameters here. Also, if you want to set a parameter across multiple trials, you can select multiple and enter the value. Note that only the parameters that do not change across all the trials are displayed when multiple rows are selected:
+There are various feature in the editor, so play around with adding parameters here. For example, if you want to set a parameter across multiple trials, you can select multiple and enter the value. Note that only the parameters that do not change across all the trials are displayed when multiple rows are selected:
 ![]({{ '/assets/Images/GratingSeries/GratingSeriesA1-4.PNG' | relative_url }})
 
 *** 
