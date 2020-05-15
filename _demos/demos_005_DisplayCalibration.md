@@ -41,6 +41,9 @@ _NOTE: To make it convenient, we have the option of calibrating the display by u
 ### __A. Measuring camera intrinsics__
 This workflow is to calibrate the intrinsic properties of the camera-lens combination, using standardized OpenCV formats. If you have previously calibrated the camera, you can simply save the value in the OpenCV format and link the function C (below) to that file. Alternatively, you will need to run this program. Running it displays a checkerboard pattern on the screen. (You can also print a checkboard patter of known size). Once it is displayed in the screen, measure the size a unit square and enter it under __  __ After that you will have to take pictures of the checkerboard pattern from different camera viewing angles. In the workflow, an image can be taken by hitting the _spacebar_. As a standard, we use 7 images: (1) from the front of the pattern, (2) from the Left, (3) from the Right, (4) from below the pattern, (5) from above, (6) from the top, right corner, and (7) from the bottom left corner (illustrated in the figure below).
 
+<img src="https://github.com/bonvision/bonvision.github.io/tree/master/assets/Images/Demos/DisplayPosition/disp-front.jpg" width="200" height="200" />
+
+***
 ![]({{ '/assets/Images/Demos/DisplayPosition/disp-front.jpg' =10x| relative_url }})
 ![]({{ '/assets/Images/Demos/DisplayPosition/disp-w.jpg' =20x| relative_url }})
 ![]({{ '/assets/Images/Demos/DisplayPosition/disp-e.jpg' =30x| relative_url }})
