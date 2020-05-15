@@ -34,13 +34,20 @@ _B. Show an Aruco image on the display_
 
 _C. Calibrate the screen position_
 
-_NOTE: To make it convenient, we have the option of calibrating the display by using just your phone camera. You would need to just take pictures of the setup as described below and upload the images on a system running Bonsai._
+_NOTE: To make it convenient, we have the option of calibrating the display by using your phone camera. You would need to take pictures of the setup as described below and upload the images on a system running Bonsai._
 
-# __A. Measuring camera intrinsics__
+### __A. Measuring camera intrinsics__
 This workflow is to calibrate the intrinsic properties of the camera-lens combination, using standardized OpenCV formats. If you have previously calibrated the camera, you can simply save the value in the OpenCV format and link the function C (below) to that file. Alternatively, you will need to run this program. Running it displays a checkerboard pattern on the screen. (You can also print a checkboard patter of known size). Once it is displayed in the screen, measure the size a unit square and enter it under __  __ After that you will have to take pictures of the checkerboard pattern from different camera viewing angles. In the workflow, an image can be taken by hitting the _spacebar_. As a standard, we use 7 images: (1) from the front of the pattern, (2) from the Left, (3) from the Right, (4) from below the pattern, (5) from above, (6) from the top, right corner, and (7) from the bottom left corner (illustrated in the figure below).
 
-# __B. Show an Aruco marker on the display__
-This is just used to show a single image at the centre of the display. Once displayed, it is important to measure the size of the image using a ruler, to ensure that it is of a known size. 
+### __B. Measure display size using a Marker__
+We again use an Aruco Marker to define the size of the display. The workflow __ __ displays a marker in the centre of the screen. One can then adjust the size of the marker by using the up/down keys. What we would like it to match the marker size with that of the one in the subject's position. We can do this by just measuring the two of them, or placing the paper over the screen and ensureing that they are the same size (there is often sufficient transparency on the paper to be able to do this. _If not, go greener and use thinner paper in general_). This output a display size that can be verified by measuring the actual dimensions of the screen.
 
-# __C. Calibrate the screen position__
-We would need to have one Aruco marker on the centre of the display and one at the positon of the subject. The latter is ideally a print out of a known size. Once these are displayed, we just need them to be viewed simultaneously through the camera and run the workflow which generates the calibrated position values. _Note that Aruco markers are directional, i.e. it matters which of the four sides of the square faces the front (or 0 deg)._
+### __C. Calibrate the screen position__
+We would need to have one Aruco marker on the centre of the display and one at the positon of the subject. The latter is ideally a print out of a known size. Once these are displayed, we just need them to be viewed simultaneously through the camera and run the workflow which generates the calibrated position values. As Aruco markers are directional, we have chosen to use Acuro marker Original #45 (shown below), and the marker need to be placed such that the thin side is looking in the direction that the subject is looking. 
+
+Take an picture of the setup when the two markers are visible and run the workflow. 
+
+_Note: Make sure that there are just the two markers within the image._
+
+#### Multiple displays: 
+These would have to be individually calibrated at the moment.
