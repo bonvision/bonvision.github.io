@@ -44,6 +44,11 @@ This workflow is to calibrate the intrinsic properties of the camera-lens combin
 <img src="https://github.com/bonvision/bonvision.github.io/blob/master/assets/Images/Demos/DisplayPosition/disp-front.jpg" width="200" height="200"/>
 <img src="https://github.com/bonvision/bonvision.github.io/blob/master/assets/Images/Demos/DisplayPosition/disp-front.jpg" width="50" height="50"/>
 ***
+
+<img src="../assets/Images/Demos/DisplayPosition/disp-front.jpg" width="200" height="200"/>
+<img src="../assets/Images/Demos/DisplayPosition/disp-front.jpg" width="50" height="50"/>
+
+***
 ![]({{ '/assets/Images/Demos/DisplayPosition/disp-front.jpg' =10x| relative_url }})
 ![]({{ '/assets/Images/Demos/DisplayPosition/disp-w.jpg' =20x| relative_url }})
 ![]({{ '/assets/Images/Demos/DisplayPosition/disp-e.jpg' =30x| relative_url }})
