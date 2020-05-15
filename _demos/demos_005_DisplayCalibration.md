@@ -26,7 +26,7 @@ Measure the physical distances and angles. This can get a little tricky with get
 ## __2. Automated calibration with camera__ 
 We developed these workflows to enable easy and effective calibration of display position. Conceptually, this is done using a calibrated camera (we provide a workflow to calibrate here) and [Aruco markers](https://docs.opencv.org/trunk/d5/dae/tutorial_aruco_detection.html) to identify the 3D coordinates of the display relative to the subject. 
 
-![]({{ '/assets/Images/Demos/DisplayPosition/ArucoExamples.PNG' | relative_url }})
+![]({{ '/assets/Images/Demos/DisplayPosition/ArucoExamples.png' | relative_url }})
 
 The workflow identifies the Aruco patterns on the display and in the subject's position, using a calibrated camera, and automatically calculates the display's position. This automatic calibration has three workflow associated with it (each of them is expanded on below):
 
