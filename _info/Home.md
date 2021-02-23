@@ -18,7 +18,11 @@ BonVision is an open-source closed-loop visual environment generator developed b
 
 ***
 ## NEWS: BonVision YouTube channel!
-Check you our new YouTube channel where we upload demos and learning materials. [BonVision YouTube Channel](https://youtube.com/playlist?list=PLBKHg50VqjRJpWxnWg2pdlTD1JiMlbVCY)
+Check you our new YouTube channel where we upload demos and learning materials. [BonVision YouTube Channel](https://www.youtube.com/channel/UCEg-3mfbvjIwbzDVvqYudAA/videos)
+
+***
+## NEWS: BonVision Newsletter
+If you would like (~monthly) updates and announcements on the latest features and teaching materials on BonVision, [Sign up here!!](https://groups.google.com/u/1/g/bonvision-news) 
 
 ***
 ## NEWS: BonVision preprint is out!
@@ -28,7 +32,7 @@ G Lopes, K Farrell, E A B Horrocks, C Lee, M M Morimoto, T Muzzu, A Papanilolaou
 
 [Follow us on Twitter](https://twitter.com/BonVision_)
 
-[Subscribe to YouTube Channel](https://youtube.com/playlist?list=PLBKHg50VqjRJpWxnWg2pdlTD1JiMlbVCY)
+[Subscribe to YouTube Channel](https://www.youtube.com/channel/UCEg-3mfbvjIwbzDVvqYudAA/videos)
 
 ***
 [Getting Started](/pages/001_info)
