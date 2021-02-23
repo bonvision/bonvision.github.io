@@ -14,6 +14,10 @@ G Lopes, K Farrell, E A B Horrocks, C Lee, M M Morimoto, T Muzzu, A Papanilolaou
 
 Twitter: [Follow us @BonVision_](https://twitter.com/BonVision_)
 
+YouTube Channel: [Learning materials and demos](https://www.youtube.com/channel/UCEg-3mfbvjIwbzDVvqYudAA)
+
+Newsletter: [Get updates](https://groups.google.com/u/1/g/bonvision-news)
+
 [Forums](https://groups.google.com/forum/#!forum/bonsai-users): We will be using the Bonsai google forum for BonVision discussions, as some issues can be overlapping and related to the Bonsai framework rather than the specifics of BonVision. 
 
 [Issues](https://docs.google.com/document/d/1E-9zvr7HRs2WJzgaSD3-eQoQBEoej2nCy3y4QBgNC7k/edit?usp=sharing)
