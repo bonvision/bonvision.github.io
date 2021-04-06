@@ -7,9 +7,9 @@ author_profile: false
 toc: true
 ---
 
-### Under Construction
-# Mesh Mapping
-## Protocol for producing a mesh-mapping file using Bonsai (EH, April 2021)
+_Under Construction_
+
+__Protocol for producing a mesh-mapping file using Bonsai (EH, April 2021)__
 
 ### Purpose
 Mesh mapping is performed to generate a mapping from pixel space (x,y) to visual angle space (azimuth, elevation) 
@@ -28,9 +28,11 @@ We provide 3 Bonsai workflows and a MatLab script for producing a mesh mapping f
 3. The second workflow, _MeshMapping_showCheckerboard_ draws a simple checkerboard to test the accuracy of your mesh mapping file. 
 4. The third workflow, _MeshMapping_correctPositions_
 
+---
+
 # Protocol
 
-## Step 1 - Generating initial mesh map
+### Step 1 - Generating initial mesh map
 
 Open the _MeshMap_Generate workflow_ and enter the required parameters:
 - Height and Width of display projector (in pixels). E.g. Width = 1280, Height = 800.
@@ -48,7 +50,7 @@ The green circle on the grid of circles should now have moved to the next point 
 Once you have assigned all the required points close the shader window and workflow. 
 The mesh mapping .csv file will be saved in the location you specified.
 
-## Step 2 - Interpolating and formatting the mesh mapping file
+### Step 2 - Interpolating and formatting the mesh mapping file
 
 Open the matlab script _MeshMapping_MatlabInterp_.
 Assign the variables:
@@ -60,7 +62,7 @@ Assign the variables:
 Run the script (you may need to adjust the .csv writing function depending on your matlab version). You should now have 
 an interpolated and correctly formatted mesh mapping .csv file to use in Bonsai.
 
-## Step 3 - Testing the mesh map
+### Step 3 - Testing the mesh map
 
 Open the Bonsai workflow _MeshMapping_drawCheckerboard_.
 
@@ -72,7 +74,7 @@ Run the workflow and ensure the checkerboard is displayed correctly. Each square
 
 Note if the checkerboard renders with jagged edges then adjusting the interpolation values in Step 2 may provide a solution.
 
-## Step 4 - Refine mesh map (optional)
+### Step 4 - Refine mesh map (optional)
 
 If step 3 demonstrated imperfections in the mesh map then you can choose to adjust individual points. 
 
