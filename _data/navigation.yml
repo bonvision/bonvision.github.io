@@ -52,6 +52,8 @@ demos:
         url: /demos/demos_004_GammaCalibration/
       - title: "Display Position Calibration"
         url: /demos/demos_005_DisplayCalibration/
+      - title: "Mesh Mapping Calibration"
+        url: /demos/demos_006_MeshMapping.md
       
 docs:
     - title: Primitives
