@@ -1,0 +1,88 @@
+---
+title: "Mesh Mapping Calibration"
+redirect_from: /demos
+excerpt: "A quick start guide to installing and running the Bonsai editor."
+last_modified_at: 
+author_profile: false
+toc: true
+---
+
+### Under Construction
+# Mesh Mapping
+## Protocol for producing a mesh-mapping file using Bonsai (EH, April 2021)
+
+### Purpose
+Mesh mapping is performed to generate a mapping from pixel space (x,y) to visual angle space (azimuth, elevation) 
+for a curved display surface. Mesh mapping is generally required where the relationship between pixel space and 
+visual angle space is non-trivial.
+
+### Hardware required
+- The display surface for which you are producing a mesh map.
+- Laser pointer (ideally one that clicks to stay on/off).
+- System for accurately targeting laser pointer at a given azimuth and elevation (in degrees) from the perspective of the animal’s head position. We use a custom 3D printed part suitable for holding our laser pointer at intervals of 30 vertical degrees and a high-precision rotation mount (ThorLabs) for targeting specific azimuth angles.
+
+### Overview
+We provide 3 Bonsai workflows and a MatLab script for producing a mesh mapping file for a curved display surface:
+1. _MeshMapping_Generate_ is for generating an initial mesh mapping .csv file. 
+2. The Matlab script _MeshMapping_MatlabInterp_ for interpolating and formatting the Bonsai-generated mesh map .csv file for use with the BonVision MeshMapping node.
+3. The second workflow, _MeshMapping_showCheckerboard_ draws a simple checkerboard to test the accuracy of your mesh mapping file. 
+4. The third workflow, _MeshMapping_correctPositions_
+
+# Protocol
+
+## Step 1 - Generating initial mesh map
+
+Open the _MeshMap_Generate workflow_ and enter the required parameters:
+- Height and Width of display projector (in pixels). E.g. Width = 1280, Height = 800.
+- The desired angular span of the display (HSpan for azimuth, VSpan for elevation). E.g. HSpan = 240, VSpan = 120.
+- The number of subdivisions of the angular space which you wish to perform (HSubdiv for azimuth and VSubdiv for elevation). These values generate the grid of angular points you will manually assign. E.g. for HSpan = 240 and HSubdiv = 12 13 equally spaced points (0:20:240) are specified along the azimuth for each elevation. 
+- Specify the display device property of the CreateWindow node to point at the display you are mesh mapping (e.g. ‘Second’).
+- The filename for the Mesh Mapping .csv file.
+
+You can now start the workflow. A blank shader window should fill the display surface being mesh mapped and a grid of circles representing the points to be assigned should be displayed on the display device which is showing the Bonsai GUI. The green circle indicates the current point being assigned. If you cannot see the grid, select the visualiser for the DrawGrid node. You may need to assign the first point before the grid appears.
+
+Now work through the points to be assigned. For each point:
+1. Target the laser pointer at the angular position to be assigned.
+2. Using the mouse, position the small rendered circle on the display being mesh mapped to align with the laser. Mouse Keys may be useful for the final positioning. Once you are satisfied with the position of the circle, click the left mouse key. You can then save this point by pressing the ‘d’ keyboard key.
+The green circle on the grid of circles should now have moved to the next point to be assigned. Repeat the previous step. If you wish to reassign a point you can right-click the mouse to move back to a previous point.
+Once you have assigned all the required points close the shader window and workflow. 
+The mesh mapping .csv file will be saved in the location you specified.
+
+## Step 2 - Interpolating and formatting the mesh mapping file
+
+Open the matlab script _MeshMapping_MatlabInterp_.
+Assign the variables:
+- input .csv filename
+- output .csv filename
+- Angular Span (in degrees, as assigned in the MeshMapping_Generate workflow).
+- Display Dim (in pixels, as assigned in the MeshMapping_Generate workflow).
+- interpolation resolution for both azimuth and elevation. We suggest values that are factors of the angular space values.
+Run the script (you may need to adjust the .csv writing function depending on your matlab version). You should now have 
+an interpolated and correctly formatted mesh mapping .csv file to use in Bonsai.
+
+## Step 3 - Testing the mesh map
+
+Open the Bonsai workflow _MeshMapping_drawCheckerboard_.
+
+Point the filename property of the MeshMapping node to the output file from the Matlab script. 
+
+Set the ExtentX and ExtentY of the DrawCheckerboard node as the HSpan and VSpan values from Step 1. Specify the desired number of rows and columns (VSubdiv and HSubdiv, for example).
+
+Run the workflow and ensure the checkerboard is displayed correctly. Each square should cover an equal amount of angular space as viewed from the perspective of the animals head position. Corners of each square should lie along meridians and parallels of each other.
+
+Note if the checkerboard renders with jagged edges then adjusting the interpolation values in Step 2 may provide a solution.
+
+## Step 4 - Refine mesh map (optional)
+
+If step 3 demonstrated imperfections in the mesh map then you can choose to adjust individual points. 
+
+Open the Bonsai workflow _MeshMapping_correctPositions_.
+
+Set the resolution values (Height and Width) of the shader window and ensure it is pointing to the correct display device (e.g. ‘Second’). Specify the desired output filename of the corrected mesh mapping .csv file.
+
+For each point you wish to adjust perform the following:
+- Using the mouse move the cursor to the point you wish to adjust. Press the keyboard ‘g’ key to ‘get’ the point. Text will appear to notify you of the point you are adjusting (in angular coordinates). Move the mouse cursor to the new desired location (i.e. to an updated position specified by your laser pointer). Press ‘s’ to set the point.
+- Once you have finished making adjustments, press the ‘k’ key to save the new mesh map file.
+- The new file will have the same format as the output of the MeshMapping_Generate workflow.
+You should now perform steps 2 and 3 again to interpolate and test your mesh map. Repeat this process iteratively as required.
+ allows you to manually adjust individual points in your mesh map. 
