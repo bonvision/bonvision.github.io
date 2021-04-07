@@ -29,6 +29,10 @@ We provide 3 Bonsai workflows and a MatLab script for producing a mesh mapping f
 3. _MeshMapping_showCheckerboard_ draws a simple checkerboard to test the accuracy of your mesh mapping file. 
 4. _MeshMapping_correctPositions_ can be used to interactively adjust indiviudal points in your mesh mapping file.
 
+The final output is a .csv with 5 columns (no headers): (pos_X, pos_Y, norm_Az, norm_El, intensity).
+
+where pos_X and pos_Y are normalised screen positions of each cooordinate, norm_Az and normEl are normalized azimuth and elevation co-ordinates of each position and intensity is desired intensity values for each co-ordinate (generally a column of 1's).  
+
 You can download the workflows from [here](https://github.com/bonvision/examples/tree/master/ScreenCalibration/MeshMapping).
 
 ---
@@ -73,6 +77,8 @@ an interpolated and correctly formatted mesh mapping .csv file to use in Bonsai.
 Open the Bonsai workflow _MeshMapping_drawCheckerboard_.
 
 Point the filename property of the MeshMapping node to the output file from the Matlab script. 
+
+Set the Bottom/Top and Left/Right properties of the _OrthographicView_ node as the limits of the azimuth and elevation co-ordinates being presented (related to HSpan and VSpan from Step 1). E.g. Bottom = -30, Top = 90, Left = -120, Right = 120.
 
 Set the ExtentX and ExtentY of the DrawCheckerboard node as the HSpan and VSpan values from Step 1. Specify the desired number of rows and columns (VSubdiv and HSubdiv, for example).
 
