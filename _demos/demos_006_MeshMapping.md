@@ -20,7 +20,7 @@ visual angle space is non-trivial, such as when projecting onto a demispherical 
 ### Hardware required
 - The display surface for which you are producing a mesh map.
 - Laser pointer (ideally one that clicks to stay on/off).
-- System for accurately targeting laser pointer at a given azimuth and elevation (in degrees) from the perspective of the animal’s head position. We use a custom 3D printed part suitable for holding our laser pointer at intervals of 30 vertical degrees and a high-precision rotation mount (ThorLabs) for targeting specific azimuth angles.
+- System for accurately targeting laser pointer at a given azimuth and elevation (in degrees) from the perspective of the animal’s head position. We use a custom 3D printed part suitable for holding our laser pointer at intervals of 30 vertical degrees and a high-precision rotation mount (ThorLabs) for targeting specific azimuth angles. We use [RSP1X15/M](https://www.thorlabs.com/thorproduct.cfm?partnumber=RSP1X15/M#ad-image-0).
 
 ### Overview
 We provide 3 Bonsai workflows and a MatLab script for producing a mesh mapping file for a curved display surface:
