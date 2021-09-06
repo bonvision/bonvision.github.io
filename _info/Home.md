@@ -25,9 +25,8 @@ Check you our new YouTube channel where we upload demos and learning materials. 
 If you would like (~monthly) updates and announcements on the latest features and teaching materials on BonVision, [Sign up here!!](https://groups.google.com/u/1/g/bonvision-news) 
 
 ***
-## NEWS: BonVision preprint is out!
-G Lopes, K Farrell, E A B Horrocks, C Lee, M M Morimoto, T Muzzu, A Papanilolaou, F R Rodrigues, T Wheatcroft, S Zucca, S G Solomon, A B Saleem, _BonVision - an open-source software to create and control visual environments._ [bioRxiv](https://www.biorxiv.org/content/10.1101/2020.03.09.983775v1)
-
+## NEWS: BonVision paper is out!
+G Lopes, K Farrell, E A B Horrocks, C Lee, M M Morimoto, T Muzzu, A Papanilolaou, F R Rodrigues, T Wheatcroft, S Zucca, S G Solomon, A B Saleem, (2021) _Creating and controlling visual environments using BonVision._ __eLife__ [link](https://elifesciences.org/articles/65541)
 ***
 
 [Follow us on Twitter](https://twitter.com/BonVision_)
