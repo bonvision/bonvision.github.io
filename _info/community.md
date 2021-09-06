@@ -8,9 +8,9 @@ sidebar:
   nav: "info"
 ---
 
-_Pre-print_:
+_Publication / Citation_:
 
-G Lopes, K Farrell, E A B Horrocks, C Lee, M M Morimoto, T Muzzu, A Papanilolaou, F R Rodrigues, T Wheatcroft, S Zucca, S G Solomon, A B Saleem, _BonVision - an open-source software to create and control visual environments._ bioRxiv [preprint](https://www.biorxiv.org/content/10.1101/2020.03.09.983775v1)
+G Lopes, K Farrell, E A B Horrocks, C Lee, M M Morimoto, T Muzzu, A Papanilolaou, F R Rodrigues, T Wheatcroft, S Zucca, S G Solomon, A B Saleem, (2021) _Creating and controlling visual environments using BonVision._ __eLife__ [link](https://elifesciences.org/articles/65541)
 
 Twitter: [Follow us @BonVision_](https://twitter.com/BonVision_)
 
@@ -20,7 +20,7 @@ Newsletter: [Get updates](https://groups.google.com/u/1/g/bonvision-news)
 
 [Forums](https://groups.google.com/forum/#!forum/bonsai-users): We will be using the Bonsai google forum for BonVision discussions, as some issues can be overlapping and related to the Bonsai framework rather than the specifics of BonVision. 
 
-[Issues](https://docs.google.com/document/d/1E-9zvr7HRs2WJzgaSD3-eQoQBEoej2nCy3y4QBgNC7k/edit?usp=sharing)
+[Issues](https://github.com/bonvision/BonVision/issues)
 
 FAQ page coming soon (when you ask Q's!) 
 
@@ -28,7 +28,7 @@ Bonsai: [Node info](https://bonsai-rx.org//docs/observables/), [Bonsai Resources
 
 ### Example Scripts
 
-[Examples:](https://github.com/bonvision/BonVision/tree/master/Examples)
+[Examples:](https://github.com/bonvision/examples)
 A collection of example workflows.
 
 ### Current User Groups
