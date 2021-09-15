@@ -34,3 +34,12 @@ author_profile: false
 * Workflow for Gamma calibrating a display
 
 * Workflow for automated screen position calibration
+
+***
+### Useful introductory videos
+
+{% include video id="e_5W503W1AI" provider="youtube" %}
+
+{% include video id="Keb2aXNEE8s" provider="youtube" %}
+
+***
