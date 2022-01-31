@@ -74,7 +74,7 @@ an interpolated and correctly formatted mesh mapping .csv file to use in Bonsai.
 
 ### Step 3 - Testing the mesh map
 
-Open the Bonsai workflow _MeshMapping_drawCheckerboard_.
+Open the Bonsai workflow _MeshMapping_showCheckerboard_.
 
 Point the filename property of the MeshMapping node to the output file from the Matlab script. 
 
