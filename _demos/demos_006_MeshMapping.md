@@ -52,11 +52,11 @@ You can now start the workflow. A blank shader window should fill the display su
 
 Now work through the points to be assigned. For each point:
 1. Target the laser pointer at the angular position to be assigned.
-2. Using the mouse, position the small rendered circle on the display being mesh mapped to align with the laser. Mouse Keys may be useful for the final positioning. Once you are satisfied with the position of the circle, click the left mouse key. You can then save this point by pressing the ‘d’ keyboard key.
-The green circle on the grid of circles should now have moved to the next point to be assigned. Repeat the previous step. 
+2. Using the mouse, position the small rendered circle on the display being mesh mapped to align with the laser. Mouse Keys may be useful for the final positioning. Once you are satisfied with the position of the circle, click the left mouse key. The green circle on the grid of circles should now have moved to the next point to be assigned. Repeat the previous step.
 3. If you wish to reassign a point you can right-click the mouse to move back to a previous point.
-
-Once you have assigned all the required points close the shader window and workflow. 
+4. Once you finish all points, click ‘d’ keyboard key. This will save the output to a .csv (you can click ‘d’ at any time to save current state)
+ 
+Close the shader window and workflow. 
 The mesh mapping .csv file will be saved in the location you specified before starting the workflow.
 
 ### Step 2 - Interpolating and formatting the mesh mapping file
@@ -67,7 +67,7 @@ Assign the variables:
 - output .csv filename
 - Angular Span (in degrees, as assigned in the MeshMapping_Generate workflow).
 - Display Dim (in pixels, as assigned in the MeshMapping_Generate workflow).
-- interpolation resolution for both azimuth and elevation. We suggest values that are factors of the angular span values.
+- interpolation resolution for both azimuth and elevation (in degrees). We suggest values that are factors of the angular span values. E.g. if your ‘azimuth_deg‘ == 100, azimuthInterpValue = 10
 
 You can now run the script (you may need to adjust the .csv writing function depending on your matlab version). You should now have 
 an interpolated and correctly formatted mesh mapping .csv file to use in Bonsai.
