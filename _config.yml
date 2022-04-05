@@ -142,7 +142,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/amansaleem/BonVision"
+      url: "https://github.com/bonvision"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
