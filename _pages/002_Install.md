@@ -21,4 +21,4 @@ BonVision is based on [Bonsai](https://bonsai-rx.org//docs/installation/) and ha
 ***
 # Example workflows
 
-You can find example workflows for version 0.1.0 in [this GitHub folder](https://github.com/amansaleem/BonVision/tree/master/bonVision%20Examples). 
+You can find example workflows for version 0.1.0 in [this GitHub folder](https://github.com/bonvision/examples). 
