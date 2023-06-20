@@ -26,7 +26,7 @@ We provide 3 Bonsai workflows and a Matlab script for producing a mesh mapping f
 3. _MeshMapping_showCheckerboard_ draws a simple checkerboard to test the accuracy of your mesh mapping file. 
 4. _MeshMapping_correctPositions_ can be used to interactively adjust indiviudal points in your mesh mapping file.
 
-The final output is a .csv with 5 columns (no headers): (pos_X, pos_Y, norm_Az, norm_El, intensity). [sphere-mapping mesh-map]
+The final output is a .csv with 5 columns (no headers): (pos_X, pos_Y, norm_Az, norm_El, intensity). 
 
 where pos_X and pos_Y are normalised screen positions of each cooordinate, norm_Az and normEl are normalized azimuth and elevation co-ordinates of each position and intensity is desired intensity values for each co-ordinate (generally a column of 1's).  
 
@@ -55,6 +55,9 @@ The green circle on the grid of circles should now have moved to the next point 
 
 Once you have assigned all the required points close the shader window and workflow. 
 The mesh mapping .csv file will be saved in the location you specified before starting the workflow.
+
+![]({{ '/assets/Images/Demos/MeshMapping/initial_point_mapping.JPG' | relative_url }})
+
 
 ### Step 2 - Interpolating and formatting the mesh mapping file
 
