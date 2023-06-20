@@ -1,21 +1,18 @@
 ---
 title: "Mesh Mapping Calibration"
 redirect_from: /demos
-excerpt: "A quick start guide to installing and running the Bonsai editor."
+excerpt: "A guide to creating and using a mesh-mapping file for non-trivial visual displays."
 last_modified_at: 
 author_profile: false
 toc: true
 ---
 
-_Under Construction_
-- images to add
-
 __Protocol for producing a mesh-mapping file using Bonsai (EH, April 2021)__
 
 ### Purpose
-Mesh mapping is performed to generate a mapping from pixel space (x,y) to visual angle space (azimuth, elevation) 
-for a curved display surface. Mesh mapping is generally required where the relationship between pixel space and 
-visual angle space is non-trivial, such as when projecting onto a demispherical dome.
+Mesh mapping is performed to generate a mapping from pixel space (x,y) to visual angle space (azimuth, elevation), or 
+equivalently cartesian coordinate space (x,y,z). Mesh mapping is generally required when the relationship between pixel space and 
+visual angle/cartesian coordinate space is non-trivial, such as when projecting onto a demispherical dome.
 
 ### Hardware required
 - The display surface for which you are producing a mesh map.
@@ -23,13 +20,13 @@ visual angle space is non-trivial, such as when projecting onto a demispherical 
 - System for accurately targeting laser pointer at a given azimuth and elevation (in degrees) from the perspective of the animal’s head position. We use a custom 3D printed part suitable for holding our laser pointer at intervals of 30 vertical degrees and a high-precision rotation mount for targeting specific azimuth angles. We use RSP1X15/M from ThorLabs.
 
 ### Overview
-We provide 3 Bonsai workflows and a MatLab script for producing a mesh mapping file for a curved display surface:
+We provide 3 Bonsai workflows and a Matlab script for producing a mesh mapping file for a curved display surface:
 1. _MeshMapping_Generate_ is for interactively generating an initial mesh mapping .csv file in Bonsai.
 2. The Matlab script _MeshMapping_MatlabInterp.m_ is for interpolating and formatting the Bonsai-generated mesh mapping .csv file for use with the BonVision MeshMapping node.
 3. _MeshMapping_showCheckerboard_ draws a simple checkerboard to test the accuracy of your mesh mapping file. 
 4. _MeshMapping_correctPositions_ can be used to interactively adjust indiviudal points in your mesh mapping file.
 
-The final output is a .csv with 5 columns (no headers): (pos_X, pos_Y, norm_Az, norm_El, intensity).
+The final output is a .csv with 5 columns (no headers): (pos_X, pos_Y, norm_Az, norm_El, intensity). [sphere-mapping mesh-map]
 
 where pos_X and pos_Y are normalised screen positions of each cooordinate, norm_Az and normEl are normalized azimuth and elevation co-ordinates of each position and intensity is desired intensity values for each co-ordinate (generally a column of 1's).  
 
