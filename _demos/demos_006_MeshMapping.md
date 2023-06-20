@@ -104,11 +104,7 @@ For each point you wish to adjust perform the following:
 - Once you have finished making adjustments, press the ‘k’ key to save the new mesh map file.
 - The new file will have the same format as the output of the MeshMapping_Generate workflow. You should now perform steps 2 and 3 again to interpolate and test your mesh map. Repeat this process iteratively as required.
 
- 
-<img src="https://github.com/bonvision/bonvision.github.io/blob/master/assets/Images/Demos/MeshMapping/meshmap_correction.JPG"  width="30%" height="30%">
+| Correction workflow    | Corrected checkerboard   |
+| -----------------------| -------------------------|
+| <img src="https://github.com/bonvision/bonvision.github.io/blob/master/assets/Images/Demos/MeshMapping/meshmap_correction.JPG"  width="100%" height="100%">| <img src="https://github.com/bonvision/bonvision.github.io/blob/master/assets/Images/Demos/MeshMapping/checkerboard_corrected.jpg?raw=true"  width="100%" height="100%"> |
 
-_correcting individual points using the correction workflow_
-
-<img src="https://github.com/bonvision/bonvision.github.io/blob/master/assets/Images/Demos/MeshMapping/checkerboard_corrected.jpg?raw=true"  width="30%" height="30%">
-
-_testing with the checkerboard after using the correction workflow, note the warping in the bottom right is no longer present_
