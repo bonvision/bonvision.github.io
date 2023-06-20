@@ -32,7 +32,6 @@ where pos_X and pos_Y are normalised screen positions of each cooordinate, norm_
 
 You can download the workflows from [here](https://github.com/bonvision/examples/tree/master/ScreenCalibration/MeshMapping).
 
----
 
 # Protocol
 
