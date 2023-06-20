@@ -105,6 +105,6 @@ For each point you wish to adjust perform the following:
 - The new file will have the same format as the output of the MeshMapping_Generate workflow. You should now perform steps 2 and 3 again to interpolate and test your mesh map. Repeat this process iteratively as required.
 
 
-<img src="https://github.com/bonvision/bonvision.github.io/blob/master/assets/Images/Demos/MeshMapping/meshmap_correction.JPG"  width="100%" height="100%">
+<img src="https://github.com/bonvision/bonvision.github.io/blob/master/assets/Images/Demos/MeshMapping/meshmap_correction.JPG"  width="30%" height="30%">
 
 _correction worflow_
