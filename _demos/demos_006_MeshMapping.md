@@ -56,7 +56,7 @@ The green circle on the grid of circles should now have moved to the next point 
 Once you have assigned all the required points close the shader window and workflow. 
 The mesh mapping .csv file will be saved in the location you specified before starting the workflow.
 
-![]({{ '/assets/Images/Demos/MeshMapping/initial_point_mapping.JPG' | relative_url }})
+![]({{ '/assets/Images/Demos/DisplayPosition/disp-front.jpg' | relative_url }})
 
 
 ### Step 2 - Interpolating and formatting the mesh mapping file
