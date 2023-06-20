@@ -55,7 +55,9 @@ The green circle on the grid of circles should now have moved to the next point 
 Once you have assigned all the required points close the shader window and workflow. 
 The mesh mapping .csv file will be saved in the location you specified before starting the workflow.
 
-![alt text](https://github.com/bonvision/bonvision.github.io/blob/master/assets/Images/Demos/MeshMapping/initial_point_mapping.JPG?raw=true)
+<img src="https://github.com/bonvision/bonvision.github.io/blob/master/assets/Images/Demos/MeshMapping/initial_point_mapping.JPG?raw=true"  width="30%" height="30%">
+
+_positioning the cursor where the laser is pointing_
 
 ### Step 2 - Interpolating and formatting the mesh mapping file
 
@@ -84,6 +86,11 @@ Run the workflow and ensure the checkerboard is displayed correctly. Each square
 
 Note if the checkerboard renders with jagged edges then adjusting the interpolation values in Step 2 may provide a solution.
 
+
+<img src="https://github.com/bonvision/bonvision.github.io/blob/master/assets/Images/Demos/MeshMapping/checkerboard_error.jpg?raw=true"  width="30%" height="30%">
+
+_testing the meshmap with a checkerboard - note the warping in the bottom right_
+
 ### Step 4 - Refine mesh map (optional)
 
 If step 3 demonstrated imperfections in the mesh map then you can choose to adjust individual points. 
@@ -96,4 +103,12 @@ For each point you wish to adjust perform the following:
 - Using the mouse move the cursor to the point you wish to adjust. Press the keyboard ‘g’ key to ‘get’ the point. Text will appear to notify you of the point you are adjusting (in angular coordinates). Move the mouse cursor to the new desired location (i.e. to an updated position specified by your laser pointer). Press ‘s’ to set the point. You can press 's' multiple times until you are satisified with the new placement.
 - Once you have finished making adjustments, press the ‘k’ key to save the new mesh map file.
 - The new file will have the same format as the output of the MeshMapping_Generate workflow. You should now perform steps 2 and 3 again to interpolate and test your mesh map. Repeat this process iteratively as required.
+
  
+<img src="https://github.com/bonvision/bonvision.github.io/blob/master/assets/Images/Demos/MeshMapping/meshmap_correction.JPG"  width="30%" height="30%">
+
+_correcting individual points using the correction workflow_
+
+<img src="https://github.com/bonvision/bonvision.github.io/blob/master/assets/Images/Demos/MeshMapping/checkerboard_corrected.jpg?raw=true"  width="30%" height="30%">
+
+_testing with the checkerboard after using the correction workflow, note the warping in the bottom right is no longer present_
