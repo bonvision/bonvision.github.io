@@ -61,7 +61,7 @@ _positioning the cursor where the laser is pointing_
 
 ### Step 2 - Interpolating and formatting the mesh mapping file
 
-Open the matlab script _MeshMapping_MatlabInterp_.
+Open the matlab script _MeshMapping_MatlabInterp_ or _MeshMapping_3DMatlabInterp_.
 Assign the variables:
 - input .csv filename
 - output .csv filename
@@ -69,8 +69,11 @@ Assign the variables:
 - Display Dim (in pixels, as assigned in the MeshMapping_Generate workflow).
 - interpolation resolution for both azimuth and elevation. We suggest values that are factors of the angular span values.
 
-You can now run the script (you may need to adjust the .csv writing function depending on your matlab version). You should now have 
-an interpolated and correctly formatted mesh mapping .csv file to use in Bonsai.
+If producing a sphere-mapping meshmap for 2D stimuli you can now run the script (you may need to adjust the .csv writing function depending on your matlab version).
+You should now have an interpolated and correctly formatted mesh mapping .csv file to use in Bonsai.
+
+If producing a cube-mapping meshmap for 3D stimuli the script will produce a .bin file which you must process using the python _interpolator.py_ script (note: to be consolidated).
+The output of the python script is a .bin file ready to use in your 3D bonsai workflow.
 
 ### Step 3 - Testing the mesh map
 
