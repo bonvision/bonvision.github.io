@@ -53,7 +53,6 @@ Now work through the points to be assigned. For each point:
 The green circle on the grid of circles should now have moved to the next point to be assigned. Repeat the previous step. 
 3. If you wish to reassign a point you can right-click the mouse to move back to a previous point.
 
-1. from the front of the pattern
 ![]({{ '/assets/Images/Demos/MeshMapping/initial_point_mapping.jpg' | relative_url }})
 
 Once you have assigned all the required points close the shader window and workflow. 
